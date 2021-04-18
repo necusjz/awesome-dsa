@@ -16,7 +16,7 @@ Design patterns differ by their complexity, level of detail and scale of applica
 ### Creational Patterns
 These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code:
 - [Singleton](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/singleton.cc);
-- Factory Method;
+- [Factory Method](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/factory_method.cc);
 - Abstract Factory;
 - Builder;
 - Prototype;
