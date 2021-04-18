@@ -1,39 +1,41 @@
 class CircularQueue:
-    def __init__(self, k: int):
+    def __init__(self, k):
         self.queue = [-1 for _ in range(k + 1)]
         self.size = k + 1
         self.head = 0
         self.tail = 0
 
-    def enQueue(self, value: int) -> bool:
-        if self.isFull():
+    def enqueue(self, value):
+        if self.is_full():
             return False
         self.queue[self.tail] = value
         self.tail = (self.tail + 1) % self.size
         return True
 
-    def deQueue(self) -> bool:
-        if self.isEmpty():
+    def dequeue(self):
+        if self.is_empty():
             return False
         self.head = (self.head + 1) % self.size
         return True
 
-    def Front(self) -> int:
-        if self.isEmpty():
+    def front(self):
+        if self.is_empty():
             return -1
         return self.queue[self.head]
 
-    def Rear(self) -> int:
-        if self.isEmpty():
+    def rear(self):
+        if self.is_empty():
             return -1
         return self.queue[(self.tail - 1 + self.size) % self.size]
-        
-    def isEmpty(self) -> bool:
+
+    def is_empty(self):
+        # check empty or not
         if self.head == self.tail:
             return True
         return False
 
-    def isFull(self) -> bool:
+    def is_full(self):
+        # check full or not
         if (self.tail + 1) % self.size == self.head:
             return True
         return False
