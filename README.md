@@ -9,6 +9,7 @@ It covers the basic data structures and algorithms:
 - [Merge Sort](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/merge_sort.py);
 - [Quick Sort](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/quick_sort.py);
 - [LRU Cache](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/lru_cache.py);
+- [Trie](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/trie.py)
 
 ## Design Patterns
 Design patterns differ by their complexity, level of detail and scale of applicability. In addition, they can be categorized by their intent and divided into three groups.
