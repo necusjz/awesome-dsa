@@ -5,7 +5,7 @@ This repository contains Python implementations of commonly used algorithms and 
 
 ## Algorithms
 It covers the basic data structures and algorithms:
-- Circular Queue;
+- [Circular Queue](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/circular_queue.py);
 - Merge Sort;
 - Quick Sort;
 - LRU Cache;
