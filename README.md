@@ -8,7 +8,7 @@ It covers the basic data structures and algorithms:
 - [Circular Queue](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/circular_queue.py);
 - Merge Sort;
 - Quick Sort;
-- LRU Cache;
+- [LRU Cache](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/lru_cache.py);
 
 ## Design Patterns
 Design patterns differ by their complexity, level of detail and scale of applicability. In addition, they can be categorized by their intent and divided into three groups.
