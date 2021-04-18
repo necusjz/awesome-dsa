@@ -1,7 +1,7 @@
 # SDE-PREPARES
 A Software Development Engineer Prepares.
 
-This repository contains Python implementations of commonly used algorithms and 23 design patterns.
+This repository contains our implementations of commonly used algorithms and 23 design patterns.
 
 ## Algorithms
 It covers the basic data structures and algorithms:
@@ -15,7 +15,7 @@ Design patterns differ by their complexity, level of detail and scale of applica
 
 ### Creational Patterns
 These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code:
-- Singleton;
+- [Singleton](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/singleton.cc);
 - Factory Method;
 - Abstract Factory;
 - Builder;
