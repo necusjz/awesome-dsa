@@ -1,7 +1,7 @@
 # SDE-PREPARES
 A Software Development Engineer Prepares.
 
-This repository contains our implementations of commonly used algorithms and 23 design patterns.
+This repository contains our implementations for commonly used algorithms and 23 design patterns.
 
 ## Algorithms
 It covers the basic data structures and algorithms:
@@ -51,4 +51,4 @@ These patterns are concerned with algorithms and the assignment of responsibilit
 We love contributions! Before submitting a Pull Request, it's always good to start with a new issue first.
 
 ## License
-This repository is licensed under Apache 2.0. Full license text is available in [LICENSE](https://github.com/snlndod/SRE-PREP/blob/main/LICENSE).
+This repository is licensed under Apache 2.0. Full license text is available in [LICENSE](https://github.com/snlndod/SDE-PREPARES/blob/main/LICENSE).
