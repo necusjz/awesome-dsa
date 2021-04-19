@@ -19,7 +19,7 @@ class HeapSort:
     def sort(self):
         n = len(self.nums)
         # build max heap (n)
-        for i in range(n // 2, -1, -1):
+        for i in range(n // 2 - 1, -1, -1):
             self.heapify(n, i)
         # heap sort (nlogn)
         for i in range(n - 1, 0, -1):
