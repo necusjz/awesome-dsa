@@ -1,7 +1,7 @@
 class MergeSort:
     def __init__(self, nums):
         self.nums = nums
-        # create temp array
+        # create temp array (n)
         self.temp = [-1 for _ in range(len(nums))]
 
     def merge(self, l, mid, r):
