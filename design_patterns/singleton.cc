@@ -20,7 +20,7 @@ public:
     static Singleton* GetInstance() {
         std::lock_guard<std::mutex> lock(mutex);
         if (instance == nullptr) {
-            instance  = new Singleton();
+            instance = new Singleton();
         }
         return instance;
     }
