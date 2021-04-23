@@ -8,8 +8,6 @@ class TreeNode:
 class Traversal:
     @staticmethod
     def pre_order(root):
-        if not root:
-            return root
         ret = []
         stack, node = [], root
         while stack or node:
@@ -24,8 +22,6 @@ class Traversal:
 
     @staticmethod
     def in_order(root):
-        if not root:
-            return root
         ret = []
         stack, node = [], root
         while stack or node:
@@ -40,8 +36,6 @@ class Traversal:
 
     @staticmethod
     def post_order(root):
-        if not root:
-            return root
         ret = []
         stack, node = [], root
         while stack or node:
