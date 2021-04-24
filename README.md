@@ -9,9 +9,10 @@ It covers the basic data structures and algorithms:
 - [Merge Sort](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/merge_sort.py);
 - [Quick Sort](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/quick_sort.py);
 - [Heap Sort](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/heap_sort.py);
+- [Hash Table (Chaining)](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/hash_table.py);
 - [LRU Cache](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/lru_cache.py);
-- [Recursive Traversal](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/recursive_traversal.py);
-- [Iterative Traversal](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/iterative_traversal.py);
+- [Tree Traversal (Recursion)](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/recursive_traversal.py);
+- [Tree Traversal (Iteration)](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/iterative_traversal.py);
 - [Trie](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/trie.py);
 
 ## Design Patterns
