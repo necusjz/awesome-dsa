@@ -17,7 +17,7 @@ class HashTable:
         head = self.buckets[idx]
         while head.next:
             if head.next.key == key:
-                head.next.val = value
+                head.next.value = value
                 return
             head = head.next
         head.next = HashNode(key, value)
