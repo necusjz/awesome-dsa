@@ -22,6 +22,7 @@ class Codec:
                 queue.append(node.left)
                 queue.append(node.right)
             else:
+                # use `#` to represent empty node
                 data.append("#")
         return data
 
@@ -29,6 +30,7 @@ class Codec:
     def deserialize(data):
         if not data:
             return None
+        # reconstruct from root node
         root = TreeNode(data[0])
         queue = deque([root])
         idx = 1
