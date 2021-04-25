@@ -13,6 +13,7 @@ It covers the basic data structures and algorithms:
 - [LRU Cache](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/lru_cache.py);
 - [Tree Traversal (Recursion)](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/recursive_traversal.py);
 - [Tree Traversal (Iteration)](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/iterative_traversal.py);
+- [Serialize and Deserialize (Tree)](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/codec.py);
 - [Trie](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/trie.py);
 
 ## Design Patterns
