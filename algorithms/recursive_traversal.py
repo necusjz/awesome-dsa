@@ -1,8 +1,8 @@
 class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
+    def __init__(self, val=0):
         self.val = val
-        self.left = left
-        self.right = right
+        self.left = None
+        self.right = None
 
 
 class Traversal:
