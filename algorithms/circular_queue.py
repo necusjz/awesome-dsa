@@ -29,13 +29,13 @@ class CircularQueue:
         return self.queue[(self.tail - 1 + self.size) % self.size]
 
     def is_empty(self):
-        # check empty or not
+        # check it's empty or not
         if self.head == self.tail:
             return True
         return False
 
     def is_full(self):
-        # check full or not
+        # check it's full or not
         if (self.tail + 1) % self.size == self.head:
             return True
         return False
