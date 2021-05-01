@@ -1,5 +1,5 @@
 # SDE-PREPARES
-A Software Development Engineer Prepares.
+> A Software Development Engineer Prepares
 
 This repository contains our implementations for commonly used algorithms and 23 design patterns.
 
@@ -31,7 +31,7 @@ These patterns provide various object creation mechanisms, which increase flexib
 These patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient:
 - Proxy;
 - Bridge;
-- Decorator;
+- [Decorator](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/decorator.cc);
 - Adaptor;
 - Facade;
 - Composite;
