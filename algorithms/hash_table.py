@@ -9,7 +9,7 @@ class HashNode:
 class HashTable:
     def __init__(self):
         self.size = 997
-        # use array with dummy node
+        # use array with sentinel
         self.buckets = [HashNode()] * self.size
 
     def put(self, key, value):
