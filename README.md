@@ -16,6 +16,7 @@ It covers the basic data structures and algorithms:
 - [Tree Traversal (Iteration)](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/iterative_traversal.py);
 - [Serialize and Deserialize (Tree)](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/codec.py);
 - [Trie](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/trie.py);
+- [Sieve of Eratosthenes](https://github.com/snlndod/SDE-PREPARES/blob/main/algorithms/sieve_of_eratosthenes.py);
 
 ## Design Patterns
 Design patterns differ by their complexity, level of detail and scale of applicability. In addition, they can be categorized by their intent and divided into three groups.
