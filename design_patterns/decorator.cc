@@ -13,7 +13,7 @@ public:
  */
 class ConcreteComponent : public Component {
 public:
-    void Operation() {
+    void Operation() const override {
         cout << "ConcreteComponent" << endl;
     }
 };
@@ -27,6 +27,7 @@ public:
 class Decorator : public Component {
 private:
     Component* component;
+
 public:
     Decorator(Component* c) : component(c) {}
     void Operation() const override {
@@ -39,8 +40,9 @@ public:
 class ConcreteDecoratorA : public Decorator {
 private:
     string addedState;
+
 public:
-    void Operation() {
+    void Operation() const override {
         Decorator::Operation();
         addedState = "New State";
         cout << "ConcreteDecoratorA: " << addedState << endl;
@@ -55,8 +57,9 @@ private:
     void AddedBehavior() {
         cout << "ConcreteDecoratorB: New Behavior" << endl;
     }
+
 public:
-    void Operation() {
+    void Operation() const override {
         Decorator::Operation();
         AddedBehavior();
     }

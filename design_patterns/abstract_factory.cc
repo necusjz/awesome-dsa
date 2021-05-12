@@ -12,13 +12,14 @@ public:
  */
 class ConcreteProductA1 : public AbstractProductA {
 public:
-    void Operation() {
+    void Operation() const override {
         cout << "ConcreteProductA1" << endl;
     }
 };
+
 class ConcreteProductA2 : public AbstractProductA {
 public:
-    void Operation() {
+    void Operation() const override {
         cout << "CConcreteProductA2" << endl;
     }
 };
@@ -37,13 +38,14 @@ public:
  */
 class ConcreteProductB1 : public AbstractProductB {
 public:
-    void Operation() {
+    void Operation() const override {
         cout << "ConcreteProductB1" << endl;
     }
 };
+
 class ConcreteProductB2 : public AbstractProductB {
 public:
-    void Operation() {
+    void Operation() const override {
         cout << "ConcreteProductB2" << endl;
     }
 };
@@ -57,9 +59,9 @@ public:
  */
 class AbstractFactory {
 public:
+    virtual ~AbstractFactory(){}
     virtual AbstractProductA* CreateProductA() const = 0;
     virtual AbstractProductB* CreateProductB() const = 0;
-    virtual ~AbstractFactory(){}
 };
 /**
  * Concrete Factories produce a family of products that belong to a single
@@ -69,19 +71,20 @@ public:
  */
 class ConcreteFactory1 : public AbstractFactory {
 public:
-    ConcreteProductA1* CreateProductA() {
+    AbstractProductA* CreateProductA() const override {
         return new ConcreteProductA1();
     }
-    ConcreteProductB1* CreateProductB() {
+    AbstractProductB* CreateProductB() const override {
         return new ConcreteProductB1();
     }
 };
+
 class ConcreteFactory2 : public AbstractFactory {
 public:
-    ConcreteProductA2* CreateProductA() {
+    ConcreteProductA2* CreateProductA() const override {
         return new ConcreteProductA2();
     }
-    ConcreteProductB2* CreateProductB() {
+    ConcreteProductB2* CreateProductB() const override {
         return new ConcreteProductB2();
     }
 };

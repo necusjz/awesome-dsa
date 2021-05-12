@@ -10,16 +10,17 @@ public:
 /**
  * Concrete Products provide various implementations of the Product interface.
  */
-class ConcreteProduct1 : public Product {
+class ConcreteProductA : public Product {
 public:
-    void Operation() {
-        cout << "ConcreteProduct1" << endl;
+    void Operation() const override {
+        cout << "ConcreteProductA" << endl;
     }
 };
-class ConcreteProduct2 : public Product {
+
+class ConcreteProductB : public Product {
 public:
-    void Operation() {
-        cout << "ConcreteProduct2" << endl;
+    void Operation() const override {
+        cout << "ConcreteProductB" << endl;
     }
 };
 /**
@@ -36,15 +37,16 @@ public:
  * Concrete Creators override the factory method in order to change the
  * resulting product's type.
  */
-class ConcreteCreator1 : public Creator {
+class ConcreteCreatorA : public Creator {
 public:
-    Product* FactoryMethod() {
-        return new ConcreteProduct1();
+    Product* FactoryMethod() const override {
+        return new ConcreteProductA();
     }
 };
-class ConcreteCreator2 : public Creator {
+
+class ConcreteCreatorB : public Creator {
 public:
-    Product* FactoryMethod() {
-        return new ConcreteProduct2();
+    Product* FactoryMethod() const override {
+        return new ConcreteProductB();
     }
 };
