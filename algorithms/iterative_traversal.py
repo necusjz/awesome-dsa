@@ -6,23 +6,22 @@ class TreeNode:
 
 
 class Traversal:
-    @staticmethod
-    def pre_order(root):
-        ret = []
+    def __init__(self):
+        self.ret = []
+
+    def pre_order(self, root):
         stack, node = [], root
         while stack or node:
             if node:
-                ret.append(node.val)
+                self.ret.append(node.val)
                 stack.append(node)
                 node = node.left
             else:
                 node = stack.pop()
                 node = node.right
-        return ret
+        return self.ret
 
-    @staticmethod
-    def in_order(root):
-        ret = []
+    def in_order(self, root):
         stack, node = [], root
         while stack or node:
             if node:
@@ -30,21 +29,19 @@ class Traversal:
                 node = node.left
             else:
                 node = stack.pop()
-                ret.append(node.val)
+                self.ret.append(node.val)
                 node = node.right
-        return ret
+        return self.ret
 
-    @staticmethod
-    def post_order(root):
-        ret = []
+    def post_order(self, root):
         stack, node = [], root
         while stack or node:
             if node:
-                ret.append(node.val)
+                self.ret.append(node.val)
                 stack.append(node)
                 # go right first, then reverse its result
                 node = node.right
             else:
                 node = stack.pop()
                 node = node.left
-        return ret[::-1]
+        return self.ret[::-1]

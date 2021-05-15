@@ -11,7 +11,7 @@ class Traversal:
 
     def pre_order(self, root):
         if not root:
-            return root
+            return
         self.ret.append(root.val)
         self.pre_order(root.left)
         self.pre_order(root.right)
@@ -19,7 +19,7 @@ class Traversal:
 
     def in_order(self, root):
         if not root:
-            return root
+            return
         self.in_order(root.left)
         self.ret.append(root.val)
         self.in_order(root.right)
@@ -27,7 +27,7 @@ class Traversal:
 
     def post_order(self, root):
         if not root:
-            return root
+            return
         self.post_order(root.left)
         self.post_order(root.right)
         self.ret.append(root.val)
