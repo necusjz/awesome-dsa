@@ -59,7 +59,7 @@ public:
  */
 class AbstractFactory {
 public:
-    virtual ~AbstractFactory(){}
+    virtual ~AbstractFactory() {}
     virtual AbstractProductA* CreateProductA() const = 0;
     virtual AbstractProductB* CreateProductB() const = 0;
 };
@@ -81,10 +81,10 @@ public:
 
 class ConcreteFactory2 : public AbstractFactory {
 public:
-    ConcreteProductA2* CreateProductA() const override {
+    AbstractProductA* CreateProductA() const override {
         return new ConcreteProductA2();
     }
-    ConcreteProductB2* CreateProductB() const override {
+    AbstractProductB* CreateProductB() const override {
         return new ConcreteProductB2();
     }
 };
