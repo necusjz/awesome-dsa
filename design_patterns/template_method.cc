@@ -31,10 +31,10 @@ public:
 
 class ConcreteClassB : public AbstractClass {
 public:
-    void PrimitiveOperation1() {
+    void PrimitiveOperation1() const override {
         cout << "ConcreteClassB: PrimitiveOperation1 & ";
     }
-    void PrimitiveOperation2() {
+    void PrimitiveOperation2() const override {
         cout << "PrimitiveOperation2" << endl;
     }
 };
