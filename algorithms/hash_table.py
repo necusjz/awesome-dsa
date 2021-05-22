@@ -1,4 +1,4 @@
-# use linked list for chaining
+# chaining by linked list
 class HashNode:
     def __init__(self, key=-1, value=-1):
         self.key = key
