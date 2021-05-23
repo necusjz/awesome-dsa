@@ -52,7 +52,7 @@ public:
     void Handle(Context* c) override {
         cout << "ConcreteStateB" << endl; 
         c->SetState(new ConcreteStateA());
-    };
+    }
 };
 
 void ConcreteStateA::Handle(Context* c) { 
