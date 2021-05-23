@@ -1,7 +1,7 @@
 # SDE-PREPARES
 _A Software Development Engineer Prepares_
 
-This repository contains our implementations for commonly used algorithms and 23 design patterns.
+Implementation of commonly used algorithms and 23 design patterns.
 
 ## Algorithms
 It covers the basic data structures and algorithms:
@@ -45,7 +45,7 @@ These patterns are concerned with algorithms and the assignment of responsibilit
 - [Template Method](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/template_method.cc);
 - Strategy;
 - Chain of Responsibility;
-- State;
+- [State](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/state.cc);
 - Iterator;
 - Visitor;
 - Memento;
