@@ -7,6 +7,7 @@ public:
     virtual ~AbstractProductA() {}
     virtual void Operation() const = 0;
 };
+
 /**
  * Concrete Products are created by corresponding Concrete Factories.
  */
@@ -23,6 +24,7 @@ public:
         cout << "CConcreteProductA2" << endl;
     }
 };
+
 /**
  * Here's the the base interface of another product. All products can interact
  * with each other, but proper interaction is possible only between products of
@@ -33,6 +35,7 @@ public:
     virtual ~AbstractProductB() {}
     virtual void Operation() const = 0;
 };
+
 /**
  * Concrete Products are created by corresponding Concrete Factories.
  */
@@ -49,6 +52,7 @@ public:
         cout << "ConcreteProductB2" << endl;
     }
 };
+
 /**
  * The Abstract Factory interface declares a set of methods that return
  * different abstract products. These products are called a family and are
@@ -63,6 +67,7 @@ public:
     virtual AbstractProductA* CreateProductA() const = 0;
     virtual AbstractProductB* CreateProductB() const = 0;
 };
+
 /**
  * Concrete Factories produce a family of products that belong to a single
  * variant. The factory guarantees that resulting products are compatible. Note

@@ -15,6 +15,7 @@ public:
         PrimitiveOperation2();
     }
 };
+
 /**
  * Concrete classes have to implement all abstract operations of the base class.
  * They can also override some operations with a default implementation.
