@@ -62,7 +62,7 @@ public:
         subject = s;
         name = n;
     }
-    void Update() {
+    void Update() override {
         observer_state = subject->GetState();
         cout << "observer: " << name << ", its new state is: " << observer_state << endl;
     }
