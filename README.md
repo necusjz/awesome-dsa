@@ -46,7 +46,7 @@ These patterns are concerned with algorithms and the assignment of responsibilit
 - Strategy;
 - Chain of Responsibility;
 - [State](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/state.cc);
-- Iterator;
+- [Iterator](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/iterator.cc);
 - Visitor;
 - Memento;
 - Command;
