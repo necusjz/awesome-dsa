@@ -9,22 +9,26 @@
  * Publisher and the Observer is often called the Subscriber and vice versa.
  * Also the verbs "observe", "listen" or "track" usually mean the same thing.
  */
-class IObserver {
+class Observer {
 public:
-    virtual ~IObserver() {}
+    virtual ~Observer() {}
     virtual void Update() = 0;
 };
 
-class ISubject {
+/**
+ * The Subject owns some important state and notifies observers when the state
+ * changes.
+ */
+class Subject {
 private:
-    list<IObserver*> observers;
+    list<Observer*> observers;
 
 public:
-    virtual ~ISubject() {}
-    void Attach(IObserver* observer) {
+    virtual ~Subject() {}
+    void Attach(Observer* observer) {
         observers.push_back(observer);
     }
-    void Detach(IObserver* observer) {
+    void Detach(Observer* observer) {
         observers.remove(observer);
     }
     void Notify() {
@@ -34,11 +38,7 @@ public:
     }
 };
 
-/**
- * The Subject owns some important state and notifies observers when the state
- * changes.
- */
-class Subject : public ISubject {
+class ConcreteSubject : public Subject {
 private:
     string subject_state;
 
@@ -51,14 +51,14 @@ public:
     }
 };
 
-class Observer : public IObserver {
+class ConcreteObserver : public Observer {
 private:
     string name;
-    Subject* subject;
+    ConcreteSubject* subject;
     string observer_state;
 
 public:
-    Observer(Subject* s, string n) {
+    ConcreteObserver(ConcreteSubject* s, string n) {
         subject = s;
         name = n;
     }
