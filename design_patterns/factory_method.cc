@@ -7,6 +7,7 @@ public:
     virtual ~Product() {}
     virtual void Operation() const = 0;
 };
+
 /**
  * Concrete Products provide various implementations of the Product interface.
  */
@@ -23,6 +24,7 @@ public:
         cout << "ConcreteProductB" << endl;
     }
 };
+
 /**
  * The Creator class declares the factory method that is supposed to return an
  * object of a Product class. The Creator's subclasses usually provide the
@@ -33,6 +35,7 @@ public:
     virtual ~Creator() {};
     virtual Product* FactoryMethod() const = 0;
 };
+
 /**
  * Concrete Creators override the factory method in order to change the
  * resulting product's type.

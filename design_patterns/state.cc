@@ -11,6 +11,7 @@ public:
     virtual ~State() {}
     virtual void Handle(Context* c) = 0;
 };
+
 /**
  * The Context defines the interface of interest to clients. It also maintains a
  * reference to an instance of a State subclass, which represents the current
@@ -38,6 +39,7 @@ public:
         state = s;
     }
 };
+
 /**
  * Concrete States implement various behaviors, associated with a state of the
  * Context.

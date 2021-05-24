@@ -7,6 +7,7 @@ public:
     virtual ~Component() {}
     virtual void Operation() const = 0;
 };
+
 /**
  * Concrete Components provide default implementations of the operations. There
  * might be several variations of these classes.
@@ -17,6 +18,7 @@ public:
         cout << "ConcreteComponent" << endl;
     }
 };
+
 /**
  * The base Decorator class follows the same interface as the other components.
  * The primary purpose of this class is to define the wrapping interface for all
@@ -34,6 +36,7 @@ public:
         return this->component->Operation();
     }
 };
+
 /**
  * Concrete Decorators call the wrapped object and alter its result in some way.
  */
@@ -48,6 +51,7 @@ public:
         cout << "ConcreteDecoratorA: " << addedState << endl;
     }
 };
+
 /**
  * Decorators can execute their behavior either before or after the call to a
  * wrapped object.
