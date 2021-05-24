@@ -41,7 +41,7 @@ These patterns explain how to assemble objects and classes into larger structure
 
 ### Behavioral Patterns
 These patterns are concerned with algorithms and the assignment of responsibilities between objects:
-- Observer;
+- [Observer](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/observer.cc);
 - [Template Method](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/template_method.cc);
 - Strategy;
 - Chain of Responsibility;
