@@ -2,7 +2,7 @@ class SieveOfEratosthenes:
     @staticmethod
     def sieve(n):
         # initialize boolean array
-        is_prime = [True for _ in range(n + 1)]
+        is_prime = [True] * (n + 1)
         p = 2
         while p * p <= n:
             if is_prime[p]:
