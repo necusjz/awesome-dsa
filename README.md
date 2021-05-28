@@ -49,7 +49,7 @@ These patterns are concerned with algorithms and the assignment of responsibilit
 - [Iterator](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/iterator.cc);
 - Visitor;
 - Memento;
-- Command;
+- [Command](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/command.cc);
 - Interpreter;
 - Mediator;
 
