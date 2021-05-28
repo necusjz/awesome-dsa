@@ -32,7 +32,7 @@ public:
     void SetReceiver(Receiver* r) const override {
         receiver = r;
     }
-    void Excute() {
+    void Excute() const override {
         receiver->Action();
     }
 };
