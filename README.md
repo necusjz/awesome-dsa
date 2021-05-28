@@ -34,7 +34,7 @@ These patterns explain how to assemble objects and classes into larger structure
 - Proxy;
 - Bridge;
 - [Decorator](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/decorator.cc);
-- Adaptor;
+- [Adapter](https://github.com/snlndod/SDE-PREPARES/blob/main/design_patterns/adapter.cc);
 - Facade;
 - Composite;
 - Flyweight;
