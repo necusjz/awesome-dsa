@@ -1,37 +1,37 @@
-class MergeSort:
-    def __init__(self, nums):
-        self.nums = nums
-        # create temp array (n)
-        self.temp = [-1 for _ in range(len(nums))]
-
-    def merge(self, l, mid, r):
+def merge_sort(nums):
+    def merge(l, mid, r):
         i, j = l, mid + 1
         k = l
         while i <= mid and j <= r:
-            if self.nums[i] < self.nums[j]:
-                self.temp[k] = self.nums[i]
+            if nums[i] < nums[j]:
+                temp[k] = nums[i]
                 i += 1
             else:
-                self.temp[k] = self.nums[j]
+                temp[k] = nums[j]
                 j += 1
             k += 1
         # merge remaining elements
         while i <= mid:
-            self.temp[k] = self.nums[i]
+            temp[k] = nums[i]
             i += 1
             k += 1
         while j <= r:
-            self.temp[k] = self.nums[j]
+            temp[k] = nums[j]
             j += 1
             k += 1
         # copy back into nums
-        self.nums[l:r+1] = self.temp[l:r+1]
+        nums[l:r+1] = temp[l:r+1]
 
-    def sort(self, l, r):
+    def sort(l, r):
         if l >= r:
             return
-        # bottom-up
         mid = l + ((r - l) >> 1)
-        self.sort(l, mid)
-        self.sort(mid + 1, r)
-        self.merge(l, mid, r)
+        sort(l, mid)
+        sort(mid + 1, r)
+        # bottom-up
+        merge(l, mid, r)
+
+    lo, hi = 0, len(nums) - 1
+    # initialize temp array (n)
+    temp = [-1] * len(nums)
+    sort(lo, hi)

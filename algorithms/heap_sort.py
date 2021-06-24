@@ -1,27 +1,24 @@
-class HeapSort:
-    def __init__(self, nums):
-        self.nums = nums
+def heap_sort(nums):
+    def heapify(n, i):
+        while True:
+            # find largest within subtrees
+            largest = i
+            l = 2 * i + 1
+            r = 2 * i + 2
+            if l < n and nums[i] < nums[l]:
+                largest = l
+            if r < n and nums[largest] < nums[r]:
+                largest = r
+            if largest == i:
+                break
+            nums[i], nums[largest] = nums[largest], nums[i]
+            i = largest
 
-    def heapify(self, n, i):
-        # find largest among root and children
-        largest = i
-        l = 2 * i + 1
-        r = 2 * i + 2
-        if l < n and self.nums[i] < self.nums[l]:
-            largest = l
-        if r < n and self.nums[largest] < self.nums[r]:
-            largest = r
-        # swap root and largest, continue heapify
-        if largest != i:
-            self.nums[i], self.nums[largest] = self.nums[largest], self.nums[i]
-            self.heapify(n, largest)
-
-    def sort(self):
-        n = len(self.nums)
-        # build max heap (n)
-        for i in range(n // 2 - 1, -1, -1):
-            self.heapify(n, i)
-        # heap sort (nlogn)
-        for i in range(n - 1, 0, -1):
-            self.nums[i], self.nums[0] = self.nums[0], self.nums[i]
-            self.heapify(i, 0)
+    n = len(nums)
+    # build max heap (n)
+    for idx in range(n // 2 - 1, -1, -1):
+        heapify(n, idx)
+    # heap sort (nlogn)
+    for idx in range(n - 1, 0, -1):
+        nums[idx], nums[0] = nums[0], nums[idx]
+        heapify(idx, 0)
