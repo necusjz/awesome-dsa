@@ -16,6 +16,7 @@ It covers the basic data structures and algorithms:
 - [Trie](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/trie.py);
 - [Sieve of Eratosthenes](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/sieve_of_eratosthenes.py);
 - [Next Permutation](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/next_permutation.py);
+- [Binary Indexed Tree](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/binary_indexed_tree.py);
 - [Serialize and Deserialize (Tree)](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/codec.py);
 
 ## Design Patterns
