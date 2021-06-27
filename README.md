@@ -18,6 +18,7 @@ It covers the basic data structures and algorithms:
 - [Next Permutation](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/next_permutation.py);
 - [Binary Indexed Tree](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/binary_indexed_tree.py);
 - [Serialize and Deserialize (Tree)](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/codec.py);
+- [Union-Find](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/union_find.py);
 
 ## Design Patterns
 Design patterns differ by their complexity, level of detail and scale of applicability. In addition, they can be categorized by their intent and divided into three groups.
