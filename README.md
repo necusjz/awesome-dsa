@@ -11,7 +11,6 @@ It covers the basic data structures and algorithms:
 - [Heap Sort](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/heap_sort.py);
 - [Hash Table (Chaining)](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/hash_table.py);
 - [LRU Cache](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/lru_cache.py);
-- [Tree Traversal (Recursion)](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/recursive_traversal.py);
 - [Tree Traversal (Iteration)](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/iterative_traversal.py);
 - [Trie](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/trie.py);
 - [Sieve of Eratosthenes](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/sieve_of_eratosthenes.py);
