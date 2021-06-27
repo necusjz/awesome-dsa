@@ -5,18 +5,18 @@ This repository contains our implementations for commonly used algorithms and 23
 
 ## Algorithms
 It covers the basic data structures and algorithms:
-- [Circular Queue](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/circular_queue.py);
-- [Merge Sort](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/merge_sort.py);
-- [Quick Sort](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/quick_sort.py);
-- [Heap Sort](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/heap_sort.py);
-- [Hash Table (Chaining)](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/hash_table.py);
-- [LRU Cache](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/lru_cache.py);
-- [Tree Traversal (Iteration)](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/iterative_traversal.py);
-- [Trie](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/trie.py);
-- [Sieve of Eratosthenes](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/sieve_of_eratosthenes.py);
-- [Next Permutation](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/next_permutation.py);
 - [Binary Indexed Tree](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/binary_indexed_tree.py);
-- [Serialize and Deserialize (Tree)](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/codec.py);
+- [Circular Queue](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/circular_queue.py);
+- [Hash Table](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/hash_table.py);
+- [Heap Sort](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/heap_sort.py);
+- [LRU Cache](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/lru_cache.py);
+- [Merge Sort](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/merge_sort.py);
+- [Next Permutation](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/next_permutation.py);
+- [Quick Sort](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/quick_sort.py);
+- [Serialize and Deserialize](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/codec.py);
+- [Sieve of Eratosthenes](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/sieve_of_eratosthenes.py);
+- [Tree Traversal](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/iterative_traversal.py);
+- [Trie](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/trie.py);
 - [Union-Find](https://github.com/umarellyh/SDE-PREPARES/blob/main/algorithms/union_find.py);
 
 ## Design Patterns
