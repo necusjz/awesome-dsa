@@ -3,6 +3,7 @@ class UnionFind:
         self.id = list(range(n))
     
     def find(self, x):
+        # path compression
         if self.id[x] != x:
             self.id[x] = self.find(self.id[x])
         return self.id[x]

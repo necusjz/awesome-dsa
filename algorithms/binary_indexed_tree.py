@@ -5,9 +5,10 @@ class BinaryIndexedTree:
     def update(self, i, delta):
         while i < len(self.sums):
             self.sums[i] += delta
+            # add low bit
             i += (i & -i)
     
-    def query(self, i):
+    def prefix_sum(self, i):
         ret = 0
         while i:
             ret += self.sums[i]
