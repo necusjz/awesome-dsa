@@ -33,7 +33,7 @@ def post_order(root):
         if node:
             ret.append(node.val)
             stack.append(node)
-            # go right first, then reverse its result
+            # move to right first, then reverse its result
             node = node.right
         else:
             node = stack.pop()
