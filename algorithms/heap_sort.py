@@ -1,18 +1,17 @@
 def heap_sort(nums):
     def heapify(n, i):
-        while True:
-            # find largest within subtrees
-            largest = i
-            l = 2 * i + 1
-            r = 2 * i + 2
-            if l < n and nums[i] < nums[l]:
-                largest = l
-            if r < n and nums[largest] < nums[r]:
-                largest = r
-            if largest == i:
-                break
+        # find largest among root and children
+        largest = i
+        l = 2 * i + 1
+        r = 2 * i + 2
+        if l < n and nums[i] < nums[l]:
+            largest = l
+        if r < n and nums[largest] < nums[r]:
+            largest = r
+        if largest != i:
+            # swap root and largest, continue heapify
             nums[i], nums[largest] = nums[largest], nums[i]
-            i = largest
+            heapify(n, largest)
 
     n = len(nums)
     # build max heap (n)
