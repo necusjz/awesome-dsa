@@ -1,8 +1,8 @@
 from collections import defaultdict
 
 
-# TreeNode can search children and determine whether it's end or not
 class TrieNode:
+    """Operate on its children and determine if it's a word."""
     def __init__(self):
         self.children = defaultdict(TrieNode)
         self.is_word = False
@@ -15,7 +15,7 @@ class Trie:
     def insert(self, word):
         node = self.root
         for w in word:
-            # use defaultdict without declaring value
+            # without declaring key
             node = node.children[w]
         node.is_word = True
 
@@ -33,5 +33,5 @@ class Trie:
             node = node.children.get(w)
             if not node:
                 return False
-        # search prefix/word is different
+        # must be a prefix
         return True
