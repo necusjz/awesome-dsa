@@ -3,8 +3,8 @@ from collections import OrderedDict
 
 class LRUCache:
     def __init__(self, k):
-        self.cache = OrderedDict()
         self.size = k
+        self.cache = OrderedDict()
 
     def get(self, key):
         if key not in self.cache:
