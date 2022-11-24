@@ -4,8 +4,7 @@ def next_permutation(nums):
         l -= 1
     if l == 0:
         # if it doesn't exist, return smallest
-        nums = nums[::-1]
-        return nums
+        return nums[::-1]
     while nums[r] <= nums[l-1]:
         r -= 1
     # swap and reverse suffix elements
