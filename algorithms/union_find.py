@@ -9,4 +9,5 @@ class UnionFind:
         # path compression
         if self.id[x] != x:
             self.id[x] = self.find(self.id[x])
+
         return self.id[x]
