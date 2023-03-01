@@ -1,8 +1,7 @@
 def quick_sort(nums):
     def partition(l, r):
-        # avoid ordered arrays
-        rand_idx = randint(l, r)
-        nums[r], nums[rand_idx] = nums[rand_idx], nums[r]
+        idx = random.randint(l, r)
+        nums[r], nums[idx] = nums[idx], nums[r]
         # set pivot
         pivot = nums[r]
         i = l
