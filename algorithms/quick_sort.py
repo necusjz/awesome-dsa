@@ -1,5 +1,3 @@
-from random import randint
-
 def quick_sort(nums):
     def partition(l, r):
         # avoid ordered arrays
