@@ -1,23 +1,27 @@
+import random
+
+
 def quick_sort(nums):
     def partition(l, r):
         idx = random.randint(l, r)
-        nums[r], nums[idx] = nums[idx], nums[r]
-        # set pivot
-        pivot = nums[r]
+        nums[idx], nums[r] = nums[r], nums[idx]
+        pivot = nums[r]  # set pivot
+
         i = l
         for j in range(l, r):
             if nums[j] < pivot:
-                nums[i], nums[j] = nums[j], nums[i]
-                # increase index of smaller element
-                i += 1
+                nums[j], nums[i] = nums[i], nums[j]
+                i += 1  # increase index of smaller element
         nums[i], nums[r] = nums[r], nums[i]
+
         return i
 
     def sort(l, r):
         if l >= r:
             return
-        # top-down
-        idx = partition(l, r)
+
+        idx = partition(l, r)  # top-down
+
         sort(l, idx - 1)
         sort(idx + 1, r)
 
