@@ -10,6 +10,7 @@ It covers the most commonly used data structures and algorithms:
 - [GCD & LCM](https://github.com/necusjz/awesome-cs/blob/main/algorithms/gcd.py)
 - [Hash Table](https://github.com/necusjz/awesome-cs/blob/main/algorithms/hash_table.py)
 - [Heap Sort](https://github.com/necusjz/awesome-cs/blob/main/algorithms/heap_sort.py)
+- [Kadane's Algorithm](https://github.com/necusjz/awesome-cs/blob/main/algorithms/kadane.py)
 - [LRU Cache](https://github.com/necusjz/awesome-cs/blob/main/algorithms/lru_cache.py)
 - [Merge Sort](https://github.com/necusjz/awesome-cs/blob/main/algorithms/merge_sort.py)
 - [Next Permutation](https://github.com/necusjz/awesome-cs/blob/main/algorithms/next_permutation.py)
