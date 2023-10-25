@@ -9,14 +9,15 @@ class LRUCache:
     def get(self, key):
         if key not in self.cache:
             return -1
-        # update key to tail
-        self.cache.move_to_end(key)
+
+        self.cache.move_to_end(key)  # update tail
+
         return self.cache[key]
 
     def put(self, key, value):
         if key in self.cache:
             del self.cache[key]
         self.cache[key] = value
+
         if len(self.cache) > self.size:
-            # remove element at head
-            self.cache.popitem(last=False)
+            self.cache.popitem(last=False)  # remove head

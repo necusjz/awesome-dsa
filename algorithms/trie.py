@@ -13,17 +13,17 @@ class Trie:
         self.root = TrieNode()
 
     def insert(self, word):
-        curr_node = self.root
+        node = self.root
         for w in word:
-            curr_node = curr_node.children[w]
+            node = node.children[w]
 
-        curr_node.is_word = True
+        node.is_word = True
 
     def search(self, word):
-        curr_node = self.root
+        node = self.root
         for w in word:
-            curr_node = curr_node.children.get(w)
-            if not curr_node:
+            node = node.children.get(w)
+            if not node:
                 return False
 
-        return curr_node.is_word
+        return node.is_word
