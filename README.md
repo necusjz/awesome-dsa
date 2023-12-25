@@ -3,8 +3,7 @@
 
 A curated list of data structures and algorithms.
 
-## Contents
-It covers the most commonly used data structures and algorithms:
+## Table of Contents
 - [Binary Indexed Tree](https://github.com/necusjz/awesome-dsa/blob/main/src/binary_indexed_tree.py)
 - [Circular Queue](https://github.com/necusjz/awesome-dsa/blob/main/src/circular_queue.py)
 - [Cycle Sort](https://github.com/necusjz/awesome-dsa/blob/main/src/cycle_sort.py)
