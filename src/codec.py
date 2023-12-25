@@ -13,8 +13,10 @@ class Codec:
     def serialize(root):
         if not root:
             return []
+
         data = []
         queue = deque([root])
+
         while queue:
             node = queue.popleft()
             if node:
@@ -22,26 +24,30 @@ class Codec:
                 queue.append(node.left)
                 queue.append(node.right)
             else:
-                # use `#` to represent empty node
-                data.append("#")
+                data.append("#")  # use # as empty node
+
         return data
 
     @staticmethod
     def deserialize(data):
         if not data:
             return None
-        # reconstruct from root node
-        root = TreeNode(data[0])
+
+        root = TreeNode(data[0])  # construct from root node
         queue = deque([root])
+
         idx = 1
         while queue:
             node = queue.popleft()
             if data[idx] != "#":
                 node.left = TreeNode(data[idx])
                 queue.append(node.left)
+
             idx += 1
             if data[idx] != "#":
                 node.right = TreeNode(data[idx])
                 queue.append(node.right)
+
             idx += 1
+
         return root

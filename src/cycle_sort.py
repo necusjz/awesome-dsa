@@ -9,6 +9,7 @@ def min_swap(nums):
         while not visited[i] and i != inverted_idx[nums[i]]:
             visited[i] = True
             i = inverted_idx[nums[i]]
+
             count += 1
 
         ret += max(0, count)
