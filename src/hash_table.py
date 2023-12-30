@@ -1,6 +1,5 @@
-# chaining by linked list
-class HashNode:
-    def __init__(self, key=-1, value=-1):
+class HashNode:  # chaining with linked list
+    def __init__(self, key=None, value=None):
         self.key = key
         self.value = value
         self.next = None
@@ -9,33 +8,40 @@ class HashNode:
 class HashTable:
     def __init__(self):
         self.size = 997
-        # use array with sentinel
-        self.buckets = [HashNode()] * self.size
+        self.buckets = [HashNode()] * self.size  # sentinel
 
-    def put(self, key, value):
+    def insert(self, key, value):
         idx = key % self.size
+
         head = self.buckets[idx]
         while head.next:
             if head.next.key == key:
                 head.next.value = value
+
                 return
+
             head = head.next
+
         head.next = HashNode(key, value)
 
     def get(self, key):
         idx = key % self.size
+
         head = self.buckets[idx]
         while head.next:
             if head.next.key == key:
                 return head.next.value
+
             head = head.next
-        return -1
 
     def remove(self, key):
         idx = key % self.size
+
         head = self.buckets[idx]
         while head.next:
             if head.next.key == key:
                 head.next = head.next.next
+
                 return
+
             head = head.next

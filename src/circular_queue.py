@@ -1,6 +1,6 @@
 class CircularQueue:
     def __init__(self, k):
-        self.queue = [-1] * (k + 1)
+        self.queue = [None] * (k + 1)
         self.size = k + 1
         self.head = 0
         self.tail = 0
@@ -24,13 +24,13 @@ class CircularQueue:
 
     def front(self):
         if self.is_empty():
-            return -1
+            return
 
         return self.queue[self.head]
 
     def rear(self):
         if self.is_empty():
-            return -1
+            return
 
         return self.queue[(self.tail - 1 + self.size) % self.size]
 

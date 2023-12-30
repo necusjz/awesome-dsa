@@ -1,16 +1,17 @@
 class BinaryIndexedTree:
-    def __init__(self, n):
-        self.sums = [0] * (n + 1)
+    def __init__(self, k):
+        self.bit = [0] * (k + 1)
+        self.size = k + 1
 
-    def update(self, i, delta):
-        while i < len(self.sums):
-            self.sums[i] += delta
+    def update(self, i, value):
+        while i < self.size:
+            self.bit[i] += value
             i += i & -i  # low bit
 
-    def prefix_sum(self, i):
+    def query(self, i):
         ret = 0
         while i:
-            ret += self.sums[i]
+            ret += self.bit[i]
             i -= i & -i
 
         return ret
