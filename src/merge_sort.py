@@ -13,7 +13,7 @@ def merge_sort(nums):
 
             k += 1
 
-        # merge remaining elements
+        # merge remaining
         while i <= mid:
             temp[k] = nums[i]
             i += 1
@@ -23,7 +23,7 @@ def merge_sort(nums):
             j += 1
             k += 1
 
-        nums[l:r+1] = temp[l:r+1]  # copy back into nums
+        nums[l:r+1] = temp[l:r+1]  # copy back
 
     def sort(l, r):
         if l >= r:
@@ -36,5 +36,6 @@ def merge_sort(nums):
         merge(l, mid, r)  # bottom-up
 
     lo, hi = 0, len(nums) - 1
-    temp = [-1] * len(nums)  # initialize temp array (n)
+    temp = [None] * len(nums)  # initialize temp array, O(n)
+
     sort(lo, hi)

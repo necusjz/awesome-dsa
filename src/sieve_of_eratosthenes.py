@@ -1,17 +1,17 @@
-def sieve_of_eratosthenes(n):
-    is_prime = [True] * (n + 1)  # initialize boolean array
+def sieve_of_eratosthenes(num):
+    is_prime = [True] * (num + 1)
 
     p = 2
-    while p * p <= n:
+    while p * p <= num:
         if is_prime[p]:
-            # update all multiples of p
-            for idx in range(p * p, n + 1, p):
-                is_prime[idx] = False
+            for i in range(p * p, num + 1, p):  # update multiples of p
+                is_prime[i] = False
 
         p += 1
 
-    ret = []
-    for p in range(2, n + 1):
+    primes = []
+    for p in range(2, num + 1):
         if is_prime[p]:
-            ret.append(p)
-    return ret
+            primes.append(p)
+
+    return primes

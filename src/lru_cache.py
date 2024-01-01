@@ -3,12 +3,12 @@ from collections import OrderedDict
 
 class LRUCache:
     def __init__(self, k):
-        self.size = k
         self.cache = OrderedDict()
+        self.size = k
 
     def get(self, key):
         if key not in self.cache:
-            return -1
+            return
 
         self.cache.move_to_end(key)  # update tail
 

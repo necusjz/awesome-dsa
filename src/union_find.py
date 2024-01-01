@@ -5,9 +5,8 @@ class UnionFind:
     def union(self, u, v):
         self.id[self.find(u)] = self.find(v)
     
-    def find(self, x):
-        # path compression
-        if self.id[x] != x:
-            self.id[x] = self.find(self.id[x])
+    def find(self, u):
+        if self.id[u] != u:  # path compression
+            self.id[u] = self.find(self.id[u])
 
-        return self.id[x]
+        return self.id[u]

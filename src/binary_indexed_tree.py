@@ -9,9 +9,9 @@ class BinaryIndexedTree:
             i += i & -i  # low bit
 
     def query(self, i):
-        ret = 0
+        psum = 0
         while i:
-            ret += self.bit[i]
+            psum += self.bit[i]
             i -= i & -i
 
-        return ret
+        return psum

@@ -11,7 +11,8 @@ def quick_sort(nums):
         for j in range(l, r):
             if nums[j] < pivot:
                 nums[j], nums[i] = nums[i], nums[j]
-                i += 1  # increase index of smaller elements
+                i += 1  # increase index of smaller
+
         nums[i], nums[r] = nums[r], nums[i]
 
         return i
@@ -26,4 +27,5 @@ def quick_sort(nums):
         sort(idx + 1, r)
 
     lo, hi = 0, len(nums) - 1
+
     sort(lo, hi)

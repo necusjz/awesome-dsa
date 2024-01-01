@@ -2,7 +2,6 @@ from collections import defaultdict
 
 
 class TrieNode:
-    """Manipulate its children and determine if it's a word."""
     def __init__(self):
         self.children = defaultdict(TrieNode)
         self.is_word = False

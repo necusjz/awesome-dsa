@@ -1,21 +1,21 @@
 def prev_order(root):
-    ret = []
+    sequence = []
 
     stack, node = [], root
     while stack or node:
         if node:
-            ret.append(node.val)
+            sequence.append(node.val)
             stack.append(node)
             node = node.left
         else:
             node = stack.pop()
             node = node.right
 
-    return ret
+    return sequence
 
 
 def in_order(root):
-    ret = []
+    sequence = []
 
     stack, node = [], root
     while stack or node:
@@ -24,23 +24,23 @@ def in_order(root):
             node = node.left
         else:
             node = stack.pop()
-            ret.append(node.val)
+            sequence.append(node.val)
             node = node.right
 
-    return ret
+    return sequence
 
 
 def post_order(root):
-    ret = []
+    sequence = []
 
     stack, node = [], root
     while stack or node:
         if node:
-            ret.append(node.val)
+            sequence.append(node.val)
             stack.append(node)
-            node = node.right  # move to the right, then reverse
+            node = node.right  # right first, then reverse
         else:
             node = stack.pop()
             node = node.left
 
-    return ret[::-1]
+    return sequence[::-1]
