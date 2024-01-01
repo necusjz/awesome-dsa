@@ -1,11 +1,6 @@
 from collections import deque
 
-
-class TreeNode:
-    def __init__(self, val=0):
-        self.val = val
-        self.left = None
-        self.right = None
+from src.utils import TreeNode
 
 
 class Codec:
@@ -31,7 +26,7 @@ class Codec:
     @staticmethod
     def deserialize(data):
         if not data:
-            return None
+            return
 
         root = TreeNode(data[0])  # construct from root node
         queue = deque([root])
