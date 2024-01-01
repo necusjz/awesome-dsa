@@ -1,4 +1,4 @@
-from src.cycle_sort import min_swap
+from src.min_swap import min_swap
 
 
 def test_min_swap():

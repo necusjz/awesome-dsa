@@ -3,7 +3,7 @@ def min_swap(nums):
     visited = [False] * n
     inverted_idx = {num: idx for idx, num in enumerate(sorted(nums))}
 
-    ret = 0
+    num = 0
     for i in range(n):
         count = -1
         while not visited[i] and i != inverted_idx[nums[i]]:
@@ -12,6 +12,6 @@ def min_swap(nums):
 
             count += 1
 
-        ret += max(0, count)
+        num += max(0, count)
 
-    return ret
+    return num
