@@ -1,7 +1,9 @@
 # Awesome DSA
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-A curated list of data structures and algorithms.
+A curated list of data structures and algorithms. Their test cases executed in the pipeline:
+
+![](https://raw.githubusercontent.com/necusjz/p/master/awesome-dsa/00.png)
 
 ## Table of Contents
 - [Binary Indexed Tree](https://github.com/necusjz/awesome-dsa/blob/main/src/binary_indexed_tree.py)
