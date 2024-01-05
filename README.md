@@ -15,6 +15,7 @@ A curated list of data structures and algorithms. Their test cases executed in t
 - [Heap Sort](https://github.com/necusjz/awesome-dsa/blob/main/src/heap_sort.py)
 - [Iterative Traversal](https://github.com/necusjz/awesome-dsa/blob/main/src/iterative_traversal.py)
 - [Kadane's Algorithm](https://github.com/necusjz/awesome-dsa/blob/main/src/kadane.py)
+- [Longest Increasing Subsequence](https://github.com/necusjz/awesome-dsa/blob/main/src/lis.py)
 - [LRU Cache](https://github.com/necusjz/awesome-dsa/blob/main/src/lru_cache.py)
 - [Merge Sort](https://github.com/necusjz/awesome-dsa/blob/main/src/merge_sort.py)
 - [Minimum Swap](https://github.com/necusjz/awesome-dsa/blob/main/src/min_swap.py)
