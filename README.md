@@ -1,9 +1,7 @@
 # Awesome DSA
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![Build Status](https://github.com/necusjz/awesome-dsa/actions/workflows/main.yaml/badge.svg)](https://github.com/necusjz/awesome-dsa/actions/workflows/main.yaml)
 
-A curated list of data structures and algorithms. Their test cases executed in the pipeline:
-
-![](https://raw.githubusercontent.com/necusjz/p/master/awesome-dsa/00.png)
+A curated list of data structures and algorithms.
 
 ## Table of Contents
 - [Binary Indexed Tree](https://github.com/necusjz/awesome-dsa/blob/main/src/binary_indexed_tree.py)
