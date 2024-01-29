@@ -1,4 +1,4 @@
-class Array:
+class DynamicArray:
     def __init__(self):
         self.n = 0
         self.capacity = 1

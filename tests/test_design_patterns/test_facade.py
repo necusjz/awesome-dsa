@@ -1,10 +1,10 @@
 import pytest
 
-from src.design_patterns.facade import Array
+from src.design_patterns.facade import DynamicArray
 
 
 def test_facade():
-    arr = Array()
+    arr = DynamicArray()
     arr.append(1)
     arr.append(2)
     arr.append(3)
