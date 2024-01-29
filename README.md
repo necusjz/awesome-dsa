@@ -25,6 +25,17 @@ A curated list of data structures and algorithms.
 - [Trie](https://github.com/necusjz/awesome-dsa/blob/main/src/trie.py)
 - [Union-Find](https://github.com/necusjz/awesome-dsa/blob/main/src/union_find.py)
 
+### Design Patterns
+Design patterns are typical solutions to common problems in software design. Each pattern is like a blueprint that you can customize to solve a particular design problem in your code:
+- [Factory Method](https://github.com/necusjz/awesome-dsa/blob/main/src/design_patterns/factory_method.py)
+- [Builder](https://github.com/necusjz/awesome-dsa/blob/main/src/design_patterns/builder.py)
+- [Singleton](https://github.com/necusjz/awesome-dsa/blob/main/src/design_patterns/singleton.py)
+- [Observer](https://github.com/necusjz/awesome-dsa/blob/main/src/design_patterns/observer.py)
+- [Iterator](https://github.com/necusjz/awesome-dsa/blob/main/src/design_patterns/iterator.py)
+- [Strategy](https://github.com/necusjz/awesome-dsa/blob/main/src/design_patterns/strategy.py)
+- [Adapter](https://github.com/necusjz/awesome-dsa/blob/main/src/design_patterns/adapter.py)
+- [Facade](https://github.com/necusjz/awesome-dsa/blob/main/src/design_patterns/facade.py)
+
 ## Contributing
 We love contributions! Before submitting a Pull Request, it's always good to start with a new issue first.
 
