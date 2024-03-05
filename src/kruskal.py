@@ -1,4 +1,4 @@
-from union_find import UnionFind
+from src.union_find import UnionFind
 
 
 def kruskal(graph):
