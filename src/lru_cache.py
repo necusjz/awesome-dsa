@@ -17,7 +17,7 @@ class LRUCache:
     def put(self, key, value):
         if key in self.cache:
             del self.cache[key]
-        self.cache[key] = value
 
+        self.cache[key] = value
         if len(self.cache) > self.size:
             self.cache.popitem(last=False)  # remove head
