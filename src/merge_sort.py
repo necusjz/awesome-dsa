@@ -36,6 +36,6 @@ def merge_sort(nums):
         merge(l, mid, r)  # bottom-up
 
     lo, hi = 0, len(nums) - 1
-    temp = [None] * len(nums)  # initialize temp array, O(n)
 
+    temp = [None] * len(nums)  # initialize temp array, O(n)
     sort(lo, hi)
