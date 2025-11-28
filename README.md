@@ -1,5 +1,5 @@
 # Awesome DSA
-[![Build Status](https://github.com/necusjz/awesome-dsa/actions/workflows/main.yaml/badge.svg)](https://github.com/necusjz/awesome-dsa/actions/workflows/main.yaml)
+[![Build Status](https://github.com/necusjz/awesome-dsa/actions/workflows/ci.yaml/badge.svg)](https://github.com/necusjz/awesome-dsa/actions/workflows/ci.yaml)
 
 A curated list of data structures and algorithms.
 

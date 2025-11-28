@@ -23,7 +23,7 @@ jobs:
         python: ["3.12", "3.14"]
         task:
           - name: Test
-            run: pytest -v --color=yes tests/
+            run: python -m pytest -v --color=yes tests/
 
     steps:
       - name: Checkout repository
